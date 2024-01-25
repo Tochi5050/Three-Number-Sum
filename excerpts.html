@@ -1,0 +1,34 @@
+Question:
+Write a function that takes in a non-empty array of distinct integers and
+an integer representing a target sum. The function should find
+all triplets in the array that sum up to the target sum and return 
+a two-dimensional array of all these triplets. The numbers in each
+triplet should be ordered in ascending order, and the triplets themselves
+should be ordered in ascending order with respect to the numbers
+they hold. If no three numbers sum up to the target sum, the function
+should return an empty array.
+
+Sample Input
+array = [12, 3, 1, 2, -6, 5. -8, 6]
+
+targetSum = 0
+
+Sample Output
+[[-8,2,6], [-8,3,5], [-6,1,5]]
+
+Thought Process:
+
+Brute Force:-  This method involves looping through the array
+three times, with indices i,j,k. The time complexity would then
+be o(n^3), which wont be optimal
+
+Three pointers: This involves placing three pointers at the
+beginning, at the next index to the beginning index and one at the
+last index, adding these values and finding the closest and
+farthest from the target sum, the pointers are moved either to the right 
+or to the left, while the initial array is sorted.
+For this solution, time complexity and space complexity evaluate to
+Time Complexity: O(n^2)
+Space Complexity: O(n)
+
+
