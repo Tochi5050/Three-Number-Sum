@@ -1,1 +1,1 @@
-Please read the "excerpts.html" final to understand what the code is doing
+Please read the "excerpts.html" file to understand what the code is doing
